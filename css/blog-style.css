@@ -30,9 +30,9 @@
     display: grid;
     grid-template-columns: 25% 25% 25% 25% ;
     grid-template-rows: 50% 50%;
-    height: 75dvh;
+    height: 90dvh;
     width: 96.7vw;
-    bottom: -90px;
+    bottom: -215px;
     gap: 15px;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .blog-title{
-    width: 100%;    
+    width: 100%;
 }
 
 .blog-description{
@@ -179,4 +179,173 @@
     justify-self: center;
     font-size: 15px;
     background: transparent;
+}
+
+@media (max-width: 1024px) {
+    .grid-container{
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;
+        width: 112dvh;
+        height: 70dvh;
+        bottom: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container{
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 33% 33% 33%;
+        width: 112dvh;
+        height: 110dvh;
+        bottom: -400px;
+    }
+
+    .blog-1{
+        grid-column: 1;
+        grid-row: 1;
+        overflow: scroll;
+    }
+    .blog-2{
+        grid-column: 2;
+        grid-row: 1;
+        overflow: scroll;
+    }
+    .blog-3{
+        grid-column: 3;
+        grid-row: 1;
+        overflow: scroll;
+    }
+    .blog-4{
+        grid-column: 1;
+        grid-row: 2;
+        overflow: scroll;
+    }
+    .blog-5{
+        grid-column: 2;
+        grid-row: 2;
+        overflow: scroll;
+    }
+    .blog-6{
+        grid-column: 3;
+        grid-row: 2;
+        overflow: scroll;
+    }
+    .blog-7{
+        grid-column: 1;
+        grid-row: 3;
+        overflow: scroll;
+    }
+    .blog-8{
+        grid-column: 2;
+        grid-row: 3;
+        overflow: scroll;
+    }
+    .blog-title{
+        width: 100%;
+        font-size: 200%;
+    }
+}
+
+@media (max-width: 596px) {
+    .grid-container{
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 33% 33% 33%;
+        width: 65dvh;
+        height: 110dvh;
+        bottom: -400px;
+    }
+}
+
+@media (max-width: 425px) {
+    .grid-container{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
+        width: 51dvh;
+        height: 130dvh;
+        bottom: -580px;
+    }
+
+    .blog-1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .blog-2{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .blog-3{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .blog-4{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .blog-5{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .blog-6{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .blog-7{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .blog-8{
+        grid-column: 2;
+        grid-row: 4;
+    }
+    .blog-title{
+        width: 100%;
+        font-size: 150%;
+    }
+}
+
+@media (max-width: 375px) {
+    .grid-container{
+        grid-template-columns: 100%;
+        grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+        width: 50dvh;
+        height: 300dvh;
+        bottom: -2070px;
+    }
+
+    .blog-1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .blog-2{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .blog-3{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .blog-4{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .blog-5{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .blog-6{
+        grid-column: 1;
+        grid-row: 6;
+    }
+    .blog-7{
+        grid-column: 1;
+        grid-row: 7;
+    }
+    .blog-8{
+        grid-column: 1;
+        grid-row: 8;
+    }
+    .blog-title{
+        width: 100%;
+        font-size: 200%;
+    }
 }
